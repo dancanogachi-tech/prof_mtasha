@@ -879,3 +879,250 @@ ul { list-style: none; }
   .card-grid { grid-template-columns: 1fr; }
   .testimonial-grid { grid-template-columns: 1fr; }
 }
+
+
+/* ============================================
+   FAQ SECTION (New)
+   ============================================ */
+.faq-section {
+  padding: 80px 0;
+  background: #ffffff;
+  text-align: center;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+  text-align: left;
+}
+
+.faq-item {
+  background: #fcfaf7;
+  border-radius: 16px;
+  padding: 28px 30px;
+  border: 1px solid #ede8df;
+  transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+  border-color: #b48b3a;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  transform: translateY(-3px);
+}
+
+.faq-question {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 10px;
+}
+
+.faq-question i {
+  color: #b48b3a;
+  font-size: 1.3rem;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.faq-question h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #1e3a2f;
+  margin: 0;
+}
+
+.faq-answer p {
+  font-size: 0.95rem;
+  color: #4f5a4b;
+  margin: 0 0 0 40px;
+  line-height: 1.7;
+}
+
+/* ============================================
+   NEWSLETTER SECTION (New)
+   ============================================ */
+.newsletter-section {
+  padding: 70px 0;
+  background: #f4f0ea;
+}
+
+.newsletter-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.newsletter-text {
+  text-align: left;
+}
+
+.newsletter-text .section-tag {
+  margin-bottom: 6px;
+}
+
+.newsletter-text h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #1e3a2f;
+  margin-bottom: 12px;
+}
+
+.newsletter-text p {
+  font-size: 1.05rem;
+  color: #4f5a4b;
+  line-height: 1.7;
+  max-width: 480px;
+}
+
+.newsletter-form {
+  background: #ffffff;
+  padding: 40px 35px;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 14px 18px;
+  border: 2px solid #ede8df;
+  border-radius: 12px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  background: #fcfaf7;
+  transition: border-color 0.3s ease;
+  color: #2d2a24;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #b48b3a;
+  background: #ffffff;
+}
+
+.form-group input::placeholder {
+  color: #a8a09a;
+  font-weight: 300;
+}
+
+.newsletter-form .btn-cta {
+  width: 100%;
+  justify-content: center;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.05rem;
+}
+
+.newsletter-form .btn-cta i {
+  margin: 0;
+}
+
+.newsletter-note {
+  margin-top: 14px;
+  font-size: 0.85rem;
+  color: #8a8a8a;
+  text-align: center;
+}
+
+.newsletter-note i {
+  margin-right: 6px;
+  color: #b48b3a;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+@media (max-width: 992px) {
+  .faq-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .newsletter-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: center;
+  }
+  
+  .newsletter-text {
+    text-align: center;
+  }
+  
+  .newsletter-text p {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .faq-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .faq-item {
+    padding: 22px 20px;
+  }
+  
+  .faq-answer p {
+    margin-left: 0;
+  }
+  
+  .faq-question {
+    gap: 12px;
+  }
+  
+  .newsletter-section {
+    padding: 50px 0;
+  }
+  
+  .newsletter-form {
+    padding: 30px 20px;
+  }
+  
+  .newsletter-text h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .faq-section {
+    padding: 50px 0;
+  }
+  
+  .faq-item {
+    padding: 18px 16px;
+  }
+  
+  .faq-question h3 {
+    font-size: 0.95rem;
+  }
+  
+  .faq-answer p {
+    font-size: 0.9rem;
+  }
+  
+  .newsletter-text h2 {
+    font-size: 1.6rem;
+  }
+  
+  .newsletter-text p {
+    font-size: 0.95rem;
+  }
+  
+  .newsletter-form .btn-cta {
+    font-size: 0.95rem;
+    padding: 12px 16px;
+  }
+}
