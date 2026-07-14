@@ -1,0 +1,11 @@
+# robots.txt for Professor Mtasha Herbal
+
+User-agent: *
+Allow: /
+
+# Prevent crawling of common system folders (optional)
+Disallow: /cgi-bin/
+Disallow: /tmp/
+
+# Sitemap location
+Sitemap: https://www.profmtashaherbal.com/sitemap.xml
